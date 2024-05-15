@@ -1,0 +1,47 @@
+/* src/Carousel.css */
+.carousel {
+    position: relative;
+    max-width: 50%;
+    max-height: 50%;
+    
+    
+    
+
+    /* overflow: hidden; */
+  }
+  .carousel__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0);
+    font-size: 1.5rem;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    z-index: 1;
+    transition: background-color 0.3s;
+    align-items: center;
+  }
+  .carousel__btn:hover {
+    background-color: rgba(0, 0, 0, 0);
+    align-items: center;
+  }
+  .carousel__btn--prev {
+    left: 0;
+  }
+  .carousel__btn--next {
+    right: 0;
+  }
+  .carousel__img {
+    width: 600px;
+    height: 325px;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+    opacity: 0.8;
+    
+  }
+  .carousel__img:hover {
+    transform: scale(1.05);
+  }
+  
